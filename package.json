@@ -1,0 +1,27 @@
+{
+  "name": "mnvps",
+  "version": "1.0.0",
+  "main": "init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GordenPirs/mnchek-vps.git"
+  },
+  "author": "PirsDevs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GordenPirs/mnchek-vps/issues"
+  },
+  "homepage": "https://github.com/GordenPirs/mnchek-vps#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "node-bitcoin-rpc": "^1.1.3",
+    "node-cron": "^2.0.3",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
