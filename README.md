@@ -28,5 +28,11 @@ RPCHOST=localhost
 SERVERIP=127.0.0.1
 ```
 
+# Test
+      node test.js
+
+в ответ вы доджны получить "ok" - в панели же обновится статус Мастерноды.
+
+
 # Run
       pm2 start init.js --name mn01
