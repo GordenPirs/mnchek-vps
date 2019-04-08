@@ -1,6 +1,8 @@
 var request = require('request');
 var rpc = require('node-bitcoin-rpc')
 require('dotenv').config()
+var cron = require('node-cron');
+
 
 function sendDate(data) {
   request.get({url:process.env.API, form: data }, function(err, res) {
@@ -35,4 +37,7 @@ function checkMasternode() {
   });
 }
 
-checkMasternode();
+cron.schedule('*/10 * * * *', () => {
+  console.log('running every minute 10');
+  checkMasternode();
+});
